@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Imperial Burger | Hambúrguer Artesanal</title>
+
+  <meta name="description" content="Conheça a Imperial Burger. Hambúrgueres artesanais, ingredientes selecionados e muito sabor. Confira nosso cardápio e faça seu pedido.">
+
+  <meta name="theme-color" content="#111111">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="header">
+    <a href="#inicio" class="logo">
+      IMPERIAL<span>BURGER.</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Abrir menu" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="navigation" id="navigation">
+      <a href="#inicio">Início</a>
+      <a href="#cardapio">Cardápio</a>
+      <a href="#sobre">Nossa história</a>
+      <a href="#localizacao">Localização</a>
+      <a href="#cardapio" class="nav-button">Fazer pedido</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- DESTAQUE PRINCIPAL -->
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <span class="eyebrow">SABOR QUE IMPRESSIONA</span>
+
+        <h1>
+          NÃO É APENAS<br>
+          UM HAMBÚRGUER.<br>
+          <span>É IMPERIAL.</span>
+        </h1>
+
+        <p>
+          Ingredientes selecionados, preparo artesanal
+          e uma experiência que merece ser saboreada.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#cardapio" class="button button-primary">
+            CONHEÇA O CARDÁPIO
+          </a>
+
+          <a href="#sobre" class="button button-outline">
+            NOSSA HISTÓRIA
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=85"
+          alt="Hambúrguer artesanal com queijo e ingredientes frescos">
+      </div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section class="features">
+      <div class="feature">
+        <span>01</span>
+        <h3>Ingredientes selecionados</h3>
+        <p>Qualidade em cada detalhe.</p>
+      </div>
+
+      <div class="feature">
+        <span>02</span>
+        <h3>Preparo artesanal</h3>
+        <p>Sabor feito com dedicação.</p>
+      </div>
+
+      <div class="feature">
+        <span>03</span>
+        <h3>Experiência premium</h3>
+        <p>Mais que uma refeição.</p>
+      </div>
+    </section>
+
+    <!-- CARDÁPIO -->
+    <section class="menu-section" id="cardapio">
+      <div class="section-heading">
+        <span class="eyebrow">NOSSA SELEÇÃO</span>
+        <h2>O CARDÁPIO <span>IMPERIAL</span></h2>
+        <p>Escolha seu favorito e prepare-se para uma experiência única.</p>
+      </div>
+
+      <div class="menu-filters">
+        <button class="filter-button active" data-filter="todos">
+          Todos
+        </button>
+        <button class="filter-button" data-filter="hamburgueres">
+          Hambúrgueres
+        </button>
+        <button class="filter-button" data-filter="acompanhamentos">
+          Acompanhamentos
+        </button>
+        <button class="filter-button" data-filter="bebidas">
+          Bebidas
+        </button>
+      </div>
+
+      <div class="menu-grid">
+
+        <article class="product-card" data-category="hamburgueres">
+          <img
+            src="https://images.unsplash.com/photo-1553979459-d2229ba7433a?auto=format&fit=crop&w=700&q=85"
+            alt="Double Smash Burger">
+
+          <div class="product-info">
+            <span class="product-tag">MAIS PEDIDO</span>
+            <h3>Double Smash</h3>
+            <p>Dois smash burgers, queijo cheddar e molho especial.</p>
+            <div class="product-bottom">
+              <strong>R$ 32,90</strong>
+              <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20pedir%20um%20Double%20Smash."
+                target="_blank" rel="noopener noreferrer">PEDIR +</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="hamburgueres">
+          <img
+            src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=700&q=85"
+            alt="Classic Bacon">
+
+          <div class="product-info">
+            <span class="product-tag">CLÁSSICO</span>
+            <h3>Classic Bacon</h3>
+            <p>Hambúrguer artesanal, bacon crocante, queijo e molho da casa.</p>
+            <div class="product-bottom">
+              <strong>R$ 35,90</strong>
+              <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20pedir%20um%20Classic%20Bacon."
+                target="_blank" rel="noopener noreferrer">PEDIR +</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="acompanhamentos">
+          <img
+            src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=85"
+            alt="Batatas fritas">
+
+          <div class="product-info">
+            <span class="product-tag">ACOMPANHAMENTO</span>
+            <h3>Batata Imperial</h3>
+            <p>Batatas crocantes, preparadas para acompanhar seu burger.</p>
+            <div class="product-bottom">
+              <strong>R$ 18,90</strong>
+              <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20pedir%20uma%20Batata%20Imperial."
+                target="_blank" rel="noopener noreferrer">PEDIR +</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="bebidas">
+          <img
+            src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=700&q=85"
+            alt="Refrigerante gelado">
+
+          <div class="product-info">
+            <span class="product-tag">BEBIDA</span>
+            <h3>Refrigerante</h3>
+            <p>Uma bebida gelada para completar sua experiência.</p>
+            <div class="product-bottom">
+              <strong>R$ 7,00</strong>
+              <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20pedir%20um%20refrigerante."
+                target="_blank" rel="noopener noreferrer">PEDIR +</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="about-section" id="sobre">
+      <div class="about-image">
+        <img
+          src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1000&q=85"
+          alt="Hambúrguer artesanal preparado com cuidado">
+      </div>
+
+      <div class="about-content">
+        <span class="eyebrow">NOSSA ESSÊNCIA</span>
+        <h2>O EXTRAORDINÁRIO ESTÁ NOS DETALHES.</h2>
+
+        <p>
+          A Imperial Burger nasceu de uma ideia simples:
+          transformar o momento de comer um hambúrguer
+          em uma experiência especial.
+        </p>
+
+        <p>
+          Cada ingrediente, cada combinação e cada detalhe
+          fazem parte da nossa busca por qualidade.
+        </p>
+
+        <a href="#cardapio" class="button button-primary">
+          EXPERIMENTE
+        </a>
+      </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+    <section class="location-section" id="localizacao">
+      <span class="eyebrow">VENHA NOS CONHECER</span>
+      <h2>SUA PRÓXIMA EXPERIÊNCIA <span>COMEÇA AQUI.</span></h2>
+
+      <p>Endereço demonstrativo — será atualizado com os dados reais.</p>
+
+      <div class="location-details">
+        <div>
+          <h3>ENDEREÇO</h3>
+          <p>Endereço da hamburgueria</p>
+        </div>
+
+        <div>
+          <h3>HORÁRIO</h3>
+          <p>Horários de funcionamento a confirmar</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <a href="#inicio" class="logo">
+      IMPERIAL<span>BURGER.</span>
+    </a>
+
+    <p>Uma experiência além do sabor.</p>
+
+    <span class="copyright">
+      © 2026 Imperial Burger. Projeto demonstrativo.
+    </span>
+  </footer>
+
+</body>
+</html>
